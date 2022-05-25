@@ -1,0 +1,12 @@
+@use '@style/variables' as variables;
+
+.playbar-marker-blur-zone {
+  width: 99.3%;
+  height: 100%;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  background-color: rgba($color: variables.$blue-color, $alpha: 0.4);
+}

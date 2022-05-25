@@ -1,0 +1,14 @@
+@use '@style/variables' as variables;
+
+.audi-button--modal{
+    min-width: 100px;
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid variables.$border-color;
+    border-radius: 5px;
+    color: variables.$text-color;
+
+    &:hover{
+        background-color: variables.$blue-color;
+    }
+}

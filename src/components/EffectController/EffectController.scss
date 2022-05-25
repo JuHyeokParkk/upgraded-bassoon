@@ -1,0 +1,38 @@
+@use '@style/variables.scss' as variables;
+
+audi-effect-controller {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.effect-controller-wrap{
+  display:flex;
+    flex-direction:column;
+    align-items: center;
+    height:100%;
+
+    border:1px solid variables.$border-color;
+    border-radius:5px;
+}
+
+.effect-controller-title {
+    width:100%;
+    padding:5px 10px;
+    
+    margin:8px 0 3px 3px;
+
+    font-weight: bold;
+    font-size: large;
+}
+
+.effect-controller-btn-container{
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 20px;
+
+  .submit-btn{
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,33 @@
+@use '@style/variables.scss'as variables;
+
+.file-tools {
+  display:flex;
+  justify-content: space-around;
+  height: 50px;
+  margin: auto 10px;
+  padding: 0 5px;
+  
+  border: 2px solid variables.$border-color;
+  border-radius: 6px;
+  
+  &:last-of-type{
+    margin-right: 20px;
+  }
+}
+
+.file-tools  > audi-icon-button {
+  margin: auto 5px;
+}
+
+
+@media screen and (max-width: 1680px) {
+  #editor-menu {
+    audi-icon-button{
+      svg{
+        width: 25px !important;
+      }
+    }
+  }
+}
+
+

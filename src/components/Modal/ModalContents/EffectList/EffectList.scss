@@ -1,0 +1,35 @@
+@use '@style/variables.scss' as variables;
+
+audi-effect-list:not(:defined) {
+    display: hidden;
+}
+
+audi-effect-list{
+    width: 100%;
+}
+
+.effect-list-container{
+    width: 100%;
+
+    li{
+        display: flex;
+        width: 100%;
+        padding: 7px 5px;
+        margin-bottom: 10px;
+        border: 1px solid variables.$border-color;
+        cursor: pointer;
+
+        &:hover{
+            color: variables.$blue-color;
+            border-color: variables.$blue-color;
+        }
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.effect-list-btn-container{
+    margin-top: 20px;
+}

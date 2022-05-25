@@ -1,0 +1,74 @@
+@use '@style/variables' as variables;
+
+audi-source-download:not(:defined) {
+    display: hidden;
+}
+
+.download-form{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  text-align: left;
+
+  div {
+    width:100%;
+    padding: 7px 20px;
+    margin-bottom: 20px;
+
+    h4{
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.file-name{
+  display:flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 5px;
+
+    font-weight: bold;
+  }
+
+  input {
+    height: 25px;
+
+    border: 1px solid variables.$border-color;
+    border-radius: 5px;
+    background-color:variables.$background-color;
+  }
+}
+
+.radios{
+  display:block;
+  label {
+    margin-right: 2rem;
+  }
+}
+
+.source-download-btn-container{
+  .save-button{
+    .audi-button--modal{
+      color: variables.$inactive-color;
+      border-color: variables.$border-color;
+
+      &:hover{
+        background-color: transparent;
+      }
+    }
+  }
+  .save-button.active{
+    .audi-button--modal{
+      color: variables.$white-color;
+      border-color: variables.$border-color;
+      background-color: variables.$blue-color;
+    }
+  }
+}
+
+.visible-hidden {
+  visibility: hidden;
+}

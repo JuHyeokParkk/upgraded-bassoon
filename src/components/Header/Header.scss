@@ -1,0 +1,30 @@
+@use '@style/variables.scss'as variables;
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  
+  border-bottom: 2px solid variables.$border-color;
+  background-color: variables.$header-color;
+}
+
+#editor-menu {
+  display: flex;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 1680px) {
+  #editor-menu {
+    audi-icon-button{
+      svg{
+        width: 25px !important;
+      }
+    }
+  }
+}
+
+
+audi-logo {
+  margin: auto auto auto 30px;
+}
